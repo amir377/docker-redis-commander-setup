@@ -11,7 +11,7 @@ prompt_user() {
 # Prompt user for Redis Commander setup details
 container_name=$(prompt_user "Enter the container" "redis-commander")
 network_name=$(prompt_user "Enter the network name" "general")
-redis_commander_port=$(prompt_user "Enter the Redis Commander port" "8090")
+redis_commander_port=$(prompt_user "Enter the Redis Commander port" "8081")
 redis_host=$(prompt_user "Enter the Redis host" "redis")
 redis_port=$(prompt_user "Enter the Redis port" "6379")
 redis_db=$(prompt_user "Enter the Redis db index" "0")

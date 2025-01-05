@@ -7,7 +7,7 @@ services:
       # Specify dbIndex as '0' if you don't want a different database.
       REDIS_HOSTS: "local:${REDIS_HOST}:${REDIS_PORT}:${REDIS_DB}:${REDIS_PASSWORD}"
     ports:
-      - "${ALLOW_HOST}:${REDIS_COMMANDER_PORT}:8090"
+      - "${ALLOW_HOST}:${REDIS_COMMANDER_PORT}:8081"
     networks:
       - ${NETWORK_NAME}
 

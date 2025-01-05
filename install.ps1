@@ -18,7 +18,7 @@ function PromptUser {
 # Prompt user for each required parameter
 $containerName = PromptUser -PromptText "Enter the container name" -DefaultValue "redis-commander"
 $networkName = PromptUser -PromptText "Enter the network name" -DefaultValue "general"
-$redisCommanderPort = PromptUser -PromptText "Enter the Redis Commander port" -DefaultValue "8090"
+$redisCommanderPort = PromptUser -PromptText "Enter the Redis Commander port" -DefaultValue "8081"
 $redisHost = PromptUser -PromptText "Enter the Redis host" -DefaultValue "redis"
 $redisDb = PromptUser -PromptText "Enter the Redis db index" -DefaultValue "0"
 $redisPort = PromptUser -PromptText "Enter the Redis port" -DefaultValue "6379"
