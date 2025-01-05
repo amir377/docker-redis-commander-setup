@@ -1,0 +1,16 @@
+services:
+  redis-commander:
+    image: rediscommander/redis-commander:latest
+    container_name: ${CONTAINER_NAME}
+    environment:
+      # The correct format is: label:host:port:dbIndex:password
+      # Specify dbIndex as '0' if you don't want a different database.
+      REDIS_HOSTS: "local:${REDIS_HOST}:${REDIS_PORT}:${REDIS_DB}:${REDIS_PASSWORD}"
+    ports:
+      - "${ALLOW_HOST}:${REDIS_COMMANDER_PORT}:8090"
+    networks:
+      - ${NETWORK_NAME}
+
+networks:
+  ${NETWORK_NAME}:
+    external: true
